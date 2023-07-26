@@ -12,6 +12,7 @@ Before you begin, ensure you have the following:
 2. Create a new IAM user and add the user to the group created in the previous step.
 
 **AWS Infrastructure Setup**
+
 **1. VPC Creation**
     1. Navigate to the AWS Management Console.
     2. Go to the VPC Dashboard and click on "Create VPC".
