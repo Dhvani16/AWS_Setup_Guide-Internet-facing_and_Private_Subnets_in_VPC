@@ -14,6 +14,7 @@ Before you begin, ensure you have the following:
 **AWS Infrastructure Setup**
 
 **1. VPC Creation**
+
     1. Navigate to the AWS Management Console.
     2. Go to the VPC Dashboard and click on "Create VPC".
     3. Provide the required details for VPC creation:
@@ -23,6 +24,7 @@ Before you begin, ensure you have the following:
     4. Click "Create VPC."
     
 **2. Internet-facing Subnet**
+
     1. Go to the Subnets section in the VPC Dashboard.
     2. Click on "Create subnet."
     3. Provide the following details:
@@ -33,10 +35,12 @@ Before you begin, ensure you have the following:
     4. Click "Create subnet."
     
 **3. Private Subnet**
+
     1. Follow the same steps as for the Internet-facing subnet but choose a different Availability Zone.
     2. Use a different IPv4 CIDR block for the private subnet (e.g., 10.0.2.0/24).
 
 **4. Launch EC2 Instances**
+
     1. Go to the EC2 Dashboard and click on "Launch Instance."
     2. Select an Amazon Machine Image (AMI) for your Linux server (e.g., Ubuntu).
     3. Choose an instance type "t2.micro" to stay within the free tier.
@@ -48,6 +52,7 @@ Before you begin, ensure you have the following:
     6. Review the instance details and launch it.
 
 **5. Connect to Instances via SSH**
+
     1. Obtain the public IP address of the Internet-facing server from the EC2 Dashboard.
     2. Use SSH to connect to the Internet-facing server:
       ssh -i /path/to/your/private/key.pem ec2-user@internet_facing_server_ip
@@ -55,6 +60,7 @@ Before you begin, ensure you have the following:
       ssh -i /path/to/your/private/key.pem ec2-user@private_server_private_ip
 
 **Conclusion**
+
   Congratulations! You have successfully set up an AWS infrastructure with two subnets (one internet-facing and one private) within a VPC. You can now access both Linux servers via SSH.
   Please refer to the provided PDF with screenshots for visual guidance during the setup process.
 
